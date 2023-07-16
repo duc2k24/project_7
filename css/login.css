@@ -1,0 +1,39 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.wrapp {
+    border: 1px solid #888;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.form {
+    width: 300px;
+    height: 350px;
+}
+
+.btn_login {
+    border: 1px solid#333;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    width: 100%;
+}
+
+.btn_login:hover {
+    background-color: green;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}

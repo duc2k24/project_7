@@ -1,0 +1,33 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.wrapp {
+  border: 1px solid #333;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.btn_signup {
+  width: 100%;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #666;
+  border-radius: 4px;
+}
+
+.btn_signup:hover {
+  background-color: green;
+  border: 1px solid transparent;
+  color: white;
+  transition: 0.3s;
+}

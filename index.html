@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+
+    <title>Project-7</title>
+  </head>
+  <body>
+    <div class="app">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <!-- number-phone -->
+            <div class="col-lg-4 d-flex p-0">
+              <div class="phone">
+                <span class="call_us">Call Us:</span>
+                <a href="#" class="number_phone">1900 0000</a>
+              </div>
+            </div>
+
+            <!-- Logo -->
+            <div class="col-lg-4 d-flex align-items-center p-0">
+              <a href="#" class="home">
+                <h2 class="logo">
+                  <i class="bi bi-house"></i><b>smart</b>haus
+                </h2>
+              </a>
+            </div>
+
+            <!-- search, login and cart -->
+            <div class="col-lg-4 p-0 align-items-center d-flex">
+              <div class="wrapper">
+                <!-- search -->
+                <div class="search">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <i class="bi bi-search"></i>
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <input
+                            type="text"
+                            id="search_input"
+                            placeholder="Search..."
+                          />
+                          <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- log in and log out -->
+                <div class="user">
+                  <a href="/view/loging.html" class="user_login">Log in /</a>
+                  <a href="/view/signup.html" class="user_signup">Sign up</a>
+                </div>
+
+                <!-- cart -->
+                <div class="carts">
+                  <div class="carts_favorite">
+                    <a href="#" class="carts_link">
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                  <div class="carts_cart">
+                    <a href="#" class="carts_link">
+                      <i class="bi bi-bag"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNavDropdown"
+            style="width: 100%; display: flex; justify-content: center"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"> Dropdown link </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- slide -->
+      <div class="container-fluid">
+        <div class="slide">
+          <img src="./img/slide-1.jpg" alt="" class="slide_img" />
+          <div class="slide_info">
+            <h3 class="slide_info-title">SMART COMPACT PROJECTOR</h3>
+            <h2 class="slide_info-h2">
+              A Mini High-definition <br />
+              Cinema Around You
+            </h2>
+            <p class="slide_info-p">
+              1070P relution | Large integrated aound chamber
+            </p>
+            <button class="btn_learn-more">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- polici -->
+      <div class="polici mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="ship">
+                <span class="ship_icon">
+                  <i class="bi bi-truck"></i>
+                </span>
+                <h3 class="ship_h3">FREE SHIPPING & RETURNS</h3>
+                <p class="ship_p">
+                  On all orders over $200 within the 10-15 days
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="ship">
+                <span class="ship_icon">
+                  <i class="bi bi-wallet2"></i>
+                </span>
+                <h3 class="ship_h3">100% MONEY REFUND</h3>
+                <p class="ship_p">We're commited to the perfect fit, always.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="ship">
+                <span class="ship_icon">
+                  <i class="bi bi-arrow-repeat"></i>
+                </span>
+                <h3 class="ship_h3">24 X 7 FREE SUPPORT</h3>
+                <p class="ship_p">
+                  Ready to help you with any questions related
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- slide-others -->
+      <div class="slide_others">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="slide_left d-flex flex-column">
+                <img src="./img/slide_2.jpg" alt="" class="slide_other" />
+                <img src="./img/slide_3.jpg" alt="" class="slide_other mt-5" />
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="slide_right">
+                <img src="./img/slide_4.jpg" alt="" class="slide_right" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- feature -->
+      <div class="feature container">
+        <div class="feature_heading container">
+          <h2 class="feature_heading-h2">Featured Products</h2>
+          <p class="feature_heading-p">
+            Our best offers on our best products with Holiday savings all season
+            long.
+          </p>
+        </div>
+
+        <!-- feature products -->
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="feature_product">
+              <img src="./img/laptop.jpg" alt="" class="feature_product-img" />
+              <div class="feature_product-info">
+                <p class="feature_product-description mt-4">Descriptions</p>
+                <h4 class="feature_product-name">Laptop Asus</h4>
+                <div class="feature_product-rate">
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p class="feature_product-price">$120</p>
+                <button class="btn_add btn-primary" type="submit">
+                  ADD TO CART
+                </button>
+
+                <!-- quick view & compare -->
+                <div class="more">
+                  <a href="#" class="more more_quick-view"
+                    >QUICK VIEW<i class="bi bi-eye"></i
+                  ></a>
+                  <a href="#" class="more more_compare">COMPARE </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="feature_product">
+              <img src="./img/laptop.jpg" alt="" class="feature_product-img" />
+              <div class="feature_product-info">
+                <p class="feature_product-description mt-4">Descriptions</p>
+                <h4 class="feature_product-name">Laptop Asus</h4>
+                <div class="feature_product-rate">
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p class="feature_product-price">$120</p>
+                <button class="btn_add btn-primary" type="submit">
+                  ADD TO CART
+                </button>
+
+                <!-- quick view & compare -->
+                <div class="more">
+                  <a href="#" class="more more_quick-view"
+                    >QUICK VIEW<i class="bi bi-eye"></i
+                  ></a>
+                  <a href="#" class="more more_compare">COMPARE </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="feature_product">
+              <img src="./img/laptop.jpg" alt="" class="feature_product-img" />
+              <div class="feature_product-info">
+                <p class="feature_product-description mt-4">Descriptions</p>
+                <h4 class="feature_product-name">Laptop Asus</h4>
+                <div class="feature_product-rate">
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p class="feature_product-price">$120</p>
+                <button class="btn_add btn-primary" type="submit">
+                  ADD TO CART
+                </button>
+
+                <!-- quick view & compare -->
+                <div class="more">
+                  <a href="#" class="more more_quick-view"
+                    >QUICK VIEW<i class="bi bi-eye"></i
+                  ></a>
+                  <a href="#" class="more more_compare">COMPARE </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="feature_product">
+              <img src="./img/laptop.jpg" alt="" class="feature_product-img" />
+              <div class="feature_product-info">
+                <p class="feature_product-description mt-4">Descriptions</p>
+                <h4 class="feature_product-name">Laptop Asus</h4>
+                <div class="feature_product-rate">
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p class="feature_product-price">$120</p>
+                <button class="btn_add btn-primary" type="submit">
+                  ADD TO CART
+                </button>
+
+                <!-- quick view & compare -->
+                <div class="more">
+                  <a href="#" class="more more_quick-view"
+                    >QUICK VIEW<i class="bi bi-eye"></i
+                  ></a>
+                  <a href="#" class="more more_compare">COMPARE </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer mt-5 container">
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="#" class="home">
+              <h2 class="logo"><i class="bi bi-house"></i><b>smart</b>haus</h2>
+            </a>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium suscipit, iure deleniti quaerat, impedit hic expedita
+              dicta possimus autem ullam a aliquam velit quisquam perferendis
+              repellat repellendus odio explicabo deserunt.
+            </p>
+
+            <!-- payment methods -->
+            <div class="pay_method">
+              <img
+                src="https://demo2wpopal.b-cdn.net/smarthaus/wp-content/uploads/2021/01/pay.png"
+                alt=""
+                class="pay_method-img"
+              />
+            </div>
+          </div>
+
+          <!-- My account -->
+          <div class="col-lg-2">
+            <div class="infomation">
+              <ul class="infomation_list">
+                MY ACCOUNT
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> My account </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Contact </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Shopping cart </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Shop </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="infomation">
+              <ul class="infomation_list">
+                CATEGORY
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Lighting </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Temperature </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Sercutiry </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Home Control </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Hubs </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="infomation">
+              <ul class="infomation_list">
+                INFOMATION
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> About us </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Blogs </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Check out </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Contact </a>
+                </li>
+                <li class="infomation_item">
+                  <a href="#" class="infomation_item-link"> Service </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
